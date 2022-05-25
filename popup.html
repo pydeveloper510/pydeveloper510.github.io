@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>:: 월드슬롯 ::</title>
+<link rel="stylesheet" href="./css/style.css" >
+<script src="./js/jquery-1.10.1.min.js"></script>
+<script src="./js/movement.js"></script>
+<!--[if lt IE 9]>
+<script src="./js/html5shiv.js"></script>
+<script src="./js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="main">
+
+<!-- popup -->
+<div id="popup">
+	<ul>
+		<li>알림</li>
+		<li>로그인 후 게임을 실행하세요.</li>
+		<li class="ok"><a href="./index.html">OK</a></li>
+	</ul>
+</div>
+<!--// popup -->
+
+<!-- header -->
+<div id="header">
+	<div class="head">
+		<div class="wrap">
+			<h1><a href="./index.html"><img src="./images/common/logo.png" alt="월드슬롯"/></a></h1>
+			<!-- 로그인 전 -->
+			<div class="login">
+				<a href="./member/login.html">로그인</a>
+				<a href="./member/join.html">회원가입</a>
+			</div>
+			<!-- 로그인 후 -->
+			<!-- <div class="top">
+				<em>유저 님</em>
+				<em>레벨 <span>1</span></em>
+				<em>보유금 : <span>1,000</span> 원</em>
+				<a href="#">로그아웃</a>
+			</div> --->
+			<div class="side"><a href="#" onClick="mobileMenuClick()"><img src="./images/common/side_icon.png" alt="Menu"/></a></div>
+		</div>
+	</div>
+	<div class="gnb">
+		<div class="wrap">
+			<em class="line1"></em>
+			<a href="./popup.html">계좌문의</a>
+			<a href="./sub/sub1.html">입금신청</a>
+			<a href="./sub/sub2.html">출금신청</a>
+			<a href="./sub/sub3.html">베팅내역</a>
+			<a href="./sub/sub4.html">입출내역</a>
+			<a href="./sub/sub5.html">문의내역<span>(0)</span></a>
+			<a href="./sub/sub6.html">공지사항</a>
+			<em class="line2"></em>
+		</div>
+	</div>
+</div>
+<!--// header -->
+
+<!-- mobileMenu -->
+<div id="mobileMenu">
+	<div class="top">
+		<h1><img src="./images/common/logo.png" alt="월드슬롯"/></h1>
+		<div class="close"><img src="./images/common/menu_close.png" alt="Close"/></div>
+	</div>
+	<!-- 로그인 전 -->
+	<div class="login">
+		<a href="./member/login.html">로그인</a>
+		<a href="./member/join.html">회원가입</a>
+	</div>
+	<!-- 로그인 후 -->
+	<div class="my">
+		<em>유저 님</em>
+		<em>레벨 <span>1</span></em>
+		<em>보유금 : <span>1,000</span> 원</em>
+		<a href="#">로그아웃</a>
+	</div>
+	<ul class="menu">
+		<li><a href="./popup.html">
+			<img src="./images/common/menulist_icon1.png" alt="계좌문의"/>
+			<p>계좌문의</p>
+		</a></li>
+		<li><a href="./sub/sub1.html">
+			<img src="./images/common/menulist_icon2.png" alt="입금신청"/>
+			<p>입금신청</p>
+		</a></li>
+		<li><a href="./sub/sub2.html">
+			<img src="./images/common/menulist_icon3.png" alt="출금신청"/>
+			<p>출금신청</p>
+		</a></li>
+		<li><a href="./sub/sub3.html">
+			<img src="./images/common/menulist_icon4.png" alt="베팅내역"/>
+			<p>베팅내역</p>
+		</a></li>
+		<li><a href="./sub/sub4.html">
+			<img src="./images/common/menulist_icon5.png" alt="입출내역"/>
+			<p>입출내역</p>
+		</a></li>
+		<li><a href="./sub/sub5.html">
+			<img src="./images/common/menulist_icon6.png" alt="문의내역"/>
+			<p>문의내역 <span>(0)</span></p>
+		</a></li>
+		<li><a href="./sub/sub6.html">
+			<img src="./images/common/menulist_icon7.png" alt="공지사항"/>
+			<p>공지사항</p>
+		</a></li>
+	</ul>
+</div>
+<!--// mobileMenu -->
+
+<!-- quick -->
+<div id="quick"><a href="#"><img src="./images/main/quick_btn.png" alt="TOP"/></a></div>
+<!--// quick -->
+
+<!-- main -->
+<div id="main">
+	<div class="visual">
+		<div class="text"><img src="./images/main/visual_text.png" alt="월드슬롯에 오신것을 환영합니다."/></div>
+		<div class="onoff">
+			<a href="#" class="on"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+		<div class="img3"><span></span></div>
+		<!-- <div class="img2"></div>
+		<div class="img3"></div> -->
+	</div>
+	<div class="main">
+		<div class="wrap">
+			<ul class="game">
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game1.png" alt="SNOW3_TPG"/>
+					</div>
+					<p>SNOW3_TPG</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game2.png" alt="SNOW3_BBIN"/>
+					</div>
+					<p>SNOW3_BBIN</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game3.png" alt="SNOW3_STAR"/>
+					</div>
+					<p>SNOW3_STAR</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game4.png" alt="BBTECH"/>
+					</div>
+					<p>BBTECH</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game5.png" alt="Pragmatic Play"/>
+					</div>
+					<p>Pragmatic Play</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game6.png" alt="PGSOFT"/>
+					</div>
+					<p>PGSOFT</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game7.png" alt="RTG"/>
+					</div>
+					<p>RTG</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game8.png" alt="CQ9"/>
+					</div>
+					<p>CQ9</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game9.png" alt="HABANERO"/>
+					</div>
+					<p>HABANERO</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game10.png" alt="PLAYSTAR"/>
+					</div>
+					<p>PLAYSTAR</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game11.png" alt="GAMEART"/>
+					</div>
+					<p>GAMEART</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game12.png" alt="TTG"/>
+					</div>
+					<p>TTG</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game13.png" alt="Genesis"/>
+					</div>
+					<p>Genesis</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game14.png" alt="Playson"/>
+					</div>
+					<p>Playson</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game15.png" alt="BNG"/>
+					</div>
+					<p>BNG</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game16.png" alt="EVOPLAY"/>
+					</div>
+					<p>EVOPLAY</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game17.png" alt="DREAMTECH"/>
+					</div>
+					<p>DREAMTECH</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game18.png" alt="AG"/>
+					</div>
+					<p>AG</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game19.png" alt="The Show"/>
+					</div>
+					<p>The Show</p>
+				</a></li>
+				<li><a href="./index_game.html">
+					<div class="img">
+						<span>게임보기</span>
+						<img src="./images/main/main_game20.png" alt="PLAYNGO"/>
+					</div>
+					<p>PLAYNGO</p>
+				</a></li>
+			</ul>
+			<ul class="today">
+				<li>
+					<p class="tit">Today <span>입금</span></p>
+					<table class="today">
+						<colgroup>
+							<col style="width:25%;" />
+							<col style="width:40%;" />
+							<col style="width:35%;" />
+						</colgroup>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<p class="tit">Today <span>출금</span></p>
+					<table class="today">
+						<colgroup>
+							<col style="width:25%;" />
+							<col style="width:40%;" />
+							<col style="width:35%;" />
+						</colgroup>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+						<tr>
+							<td class="time">14:40:30</td>
+							<td class="name">nickname</td>
+							<td>1,000,000원</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<p class="tit">Customer Center</p>
+					<p class="txt">최고의 자리에 있는 월드슬롯은 고객님의 시간에 맞추어 365일 24시간 상담센테를 운영하고 있습니다.</p>
+					<div class="btn"><a href="#"><img src="./images/main/inquiry_icon.png" alt="문의하기"/>문의하기</a></div>
+				</li>
+			</ul>
+			<address><img src="./images/main/footer.png" alt="Copyright"/></address>
+		</div>
+	</div>
+</div>
+<!--// main -->
+
+</body>
+</html>
